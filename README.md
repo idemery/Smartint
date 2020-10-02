@@ -16,3 +16,6 @@ After importing the [solution](https://github.com/idemery/Smartint/raw/master/Sm
 When a user opens the entity record and clicks on "Dropbox" for the first time, Smartint.html retrieves the token from the settings entity and creates a root folder for the entity in Smartint folder, then creates a child folder with the record id. This folder with any contents is what you see in elFinder.
 
 
+## Want to contribute?
+
+Contributions are welcomed, fork the solution, add your magic, and create a pull request! We need to support the new API version of Dropbox.
