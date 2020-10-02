@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="Smartint.SmartintPlugins.dll" Id="1d7f8029-eb56-e311-93fb-000c2969a40c" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <Plugin Description="Plug-in to PreValidateSmartintForEntityCreate" FriendlyName="PreValidateSmartintForEntityCreate" Name="Smartint.SmartintPlugins.PreValidateSmartintForEntityCreate" Id="923e7c33-f2b0-e311-b991-d89d6763fc38" TypeName="Smartint.SmartintPlugins.PreValidateSmartintForEntityCreate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PreValidateSmartintForEntityCreate" Description="Pre-Validation of Smartint For Entity Create" Id="02ae789d-7157-e311-93fb-000c2969a40c" MessageName="Create" Mode="Synchronous" PrimaryEntityName="qg_smartintforentity" Rank="1" SecureConfiguration="" Stage="PreOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to PreValidateSmartintForEntityDelete" FriendlyName="PreValidateSmartintForEntityDelete" Name="Smartint.SmartintPlugins.PreValidateSmartintForEntityDelete" Id="933e7c33-f2b0-e311-b991-d89d6763fc38" TypeName="Smartint.SmartintPlugins.PreValidateSmartintForEntityDelete">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PreValidateSmartintForEntityDelete" Description="Pre-Validation of Smartint For Entity Delete" Id="06ae789d-7157-e311-93fb-000c2969a40c" MessageName="Delete" Mode="Synchronous" PrimaryEntityName="qg_smartintforentity" Rank="1" SecureConfiguration="" Stage="PreOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+</Register>

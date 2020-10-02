@@ -1,0 +1,706 @@
+/*REUSABLE STUFF*/
+.float_left{float:left;}
+.float_right{float:right;}
+
+.cf:before,
+.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {*zoom: 1;}
+
+/*Hide*/
+.prettyMapList .prettyFileBar .prettyMapListSearch .hidden{display:none;}
+/*floats*/
+.prettyMapList .float_right{float:right;}
+.prettyMapList .float_left{float:left;}
+/*Buttons*/
+#MaplistBack,
+.prettyMapList .btn{
+    display:inline-block;
+    *display:inline;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    zoom:1;
+}
+
+.prettyMapList .btn:hover{}
+.prettyMapList .btn:active{}
+
+.prettyMapList ul.unstyled,
+.prettyMapList ul.unstyled{list-style-type:none;margin:0 !important;padding:0 !important;}
+
+/* For modern browsers */
+.prettyMapList .clearfix:before,
+.prettyMapList .clearfix:after {
+    content:"";
+    display:table;
+}
+
+.prettyMapList .clearfix:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.prettyMapList .clearfix {
+    *zoom:1;
+}
+
+/*MAIN*/
+/*The map itself*/
+.prettyMapList .mapHolder{
+    border: solid 1px #ccc;
+    height: 350px;
+    margin-bottom:15px;
+    width: 100%;
+}
+
+/*Pop up windows*/
+.prettyMapList .mapHolder .infoWindow
+{
+    font-size:14px;
+}
+
+/*CUSTOM columns*/
+
+.prettyMapList .additionalDetail{margin-bottom:10px;}
+
+.prettyMapList .additionalDetail .colLeft,
+.prettyMapList .additionalDetail .colRight{
+    float:left;
+    width:49%;
+}
+
+.infoWindowContainer{
+    border-radius:5px;
+    border:solid 1px #333;
+    position:relative;
+}
+
+.infoWindowContainer:after,
+.infoWindowContainer:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.infoWindowContainer:after {
+	border-color: rgba(255, 255, 255, 0);
+        border-top-color: #fff;
+        border-width: 15px;
+        left: 50%;
+        margin-left: -15px;
+}
+
+.infoWindowContainer:before {
+    	border-color: rgba(51, 51, 51, 0);
+        border-top-color: #333;
+        border-width: 16px;
+        left: 50%;
+        margin-left: -16px;
+}
+
+.infoWindowContainer .infoWindow{
+    background-color:#fff;
+    border-radius:0 0 5px 5px;
+    width:400px;
+}
+
+.infoWindowContainer .infoWindow .infowindowContent{
+    height:160px;
+    overflow:auto;
+    padding:10px;
+}
+
+.infoWindowContainer img{
+    position:absolute !important;
+    right:3px;
+    top:3px;
+}
+
+.infoWindowContainer img .infoWindow{position:static;width:500px;}
+
+body .infoWindowContainer .infoWindow h3{
+    border:none;
+    border-radius:0;
+    color:#1e91d7;   
+    font-size:18px;
+    line-height:1.2em;
+    margin:0 !important;
+    padding:7px;
+}
+
+.infoWindowContainer .locationImage{
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+body .infoWindowContainer .infoWindow h3 span{font-size:13px;}
+
+.infoWindowContainer .infoWindow img{position:static !important;}
+
+.prettyMapList .mapHolder .infoWindow .cats{
+    clear:both;
+    color:#888;
+    font-size:11px;
+    padding-top:5px;
+}
+
+
+/*Fixes street view button*/
+.prettyMapList .mapHolder img,
+#SingleMapLocation img{ max-width:none !important;}
+
+.prettyMapList .mapLocationDetail{
+    padding:10px 0;
+}
+
+.prettyMapList .address{position:relative;}
+
+.prettyMapList .address span{font-weight: bold;left:0;position:absolute;}
+
+.prettyMapList .mapcategories{
+    color:#aaa;
+    float:right;
+    font-size:11px;
+}
+
+.prettyMapList .mapcategories span{color:#888}
+
+/*Sort and Filter Buttons*/
+.prettyMapList .showSortingBtn,
+.prettyMapList .showFilterBtn{margin-top:10px;padding-left:28px;_padding-left:10px;position:relative;}
+.prettyMapList .showSortingBtn:before,
+.prettyMapList .showFilterBtn:before{
+	background:transparent url('../../qg_/img/icons/silk_icons/arrow_join_red_down.png') no-repeat 0 0;
+	content:"";
+	display:block;
+	height:16px;
+	left:5px;
+	position:absolute;
+	top:6px;
+	width:16px;
+}
+
+.prettyMapList .showSortingBtn:before{background-image:url('../../qg_/img/icons/silk_icons/arrow_down_red.png');}
+.prettyMapList .sortAsc:before{background-image:url('../../qg_/img/icons/silk_icons/arrow_up_red.png');}
+
+/*List styles*/
+.prettyMapList .prettylink
+{
+    	/*Drop shadow*/
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
+	cursor:pointer;
+	display:block;
+	font-size:14px;
+	line-height:1.2em;
+	margin:10px 0;
+	padding:10px 10px 10px 35px;
+	*padding:10px;/*ie6/7 don't support pseudo elements so no need to make space for the icon*/
+	position:relative;
+	text-decoration:none;
+	zoom:1;
+}
+
+.prettyMapList .prettylink:after
+{
+	content:"";
+	display:block;
+	height:20px;
+	left:10px;
+	margin-right:2px;
+	position:absolute;
+	top:11px;
+	width:20px;
+}
+
+.prettyMapList .prettylink:hover{}
+
+.prettyMapList .prettylink:active{
+    /*Inset drop-shadow*/
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.prettyMapList .prettylink a,
+.prettyMapList .prettylink a:visited{text-decoration:none;}
+
+/*Distance text for geo maps*/
+.prettyMapList .prettylink .distance{font-size:11px;}
+
+/*Address in list item*/
+.prettyMapList .prettylink .address{ margin-bottom: 10px;}
+
+/*Added to stop themes overriding*/
+.prettyMapList .map{
+    float:none;
+    display:block;
+}
+
+/*Added to stop themes overriding*/
+.prettyMapList .map{
+    float:none;
+    display:block;
+}
+
+/*Set icons*/
+.prettyMapList .map:after{background:transparent url('../../qg_/img/silk_icons/map.png') no-repeat 0 0;}
+
+/*Use featured image*/
+.prettyMapList .featuredImage{
+    border-radius:5px;
+    border:solid 1px #aaa;
+    display:block;
+    float:left;
+    margin-right:10px;
+    /*Inset drop-shadow*/
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Small thumbnail*/
+.prettyMapList .prettylink .smallImage{left:5px;position:absolute;top:5px;z-index:3;}
+
+.prettyMapList .getDirections{border-top:dashed 1px #ccc;margin-top:10px;padding-top:10px;}
+.prettyMapList .getDirections input{margin:0 3px;width: 200px;}
+.prettyMapList .mapLocationDirectionsHolder,
+.prettyMapList .mapLocationDirectionsHolder:hover{
+    background-color: #FFF;
+    color: #333;
+    margin-left: -25px;
+}
+
+.prettyMapList .mapLocationDirectionsHolder .adp-directions{
+    border: solid 1px #ccc;
+    margin-bottom: 0 !important;
+}
+
+/*Stop long directions breaking the layout*/
+.prettyMapList .mapLocationDirectionsHolder .adp-directions .adp-substep div{word-break: break-all;}
+
+/*distance and time*/
+.prettyMapList .mapLocationDirectionsHolder .adp-summary{
+    background-color:#fcfcfc;
+    border: solid 1px #ccc;
+    border-width: 0 1px;
+    color:#666;
+    font-size:13px;
+    text-align:right;
+    padding:5px;
+}
+.prettyMapList .mapLocationDirectionsHolder .adp-legal{font-size:11px;text-align: right;}/*map data google*/
+
+.prettyMapList .mapLocationDirectionsHolder table.adp-placemark{border:solid 1px #ccc;margin-bottom:0 !important;}
+
+.prettyMapList .mapLocationDirectionsHolder > div{
+    border:solid 1px #ccc;
+    margin-top:15px;
+    padding:10px;
+}
+
+.prettyMapList .mapLocationDirectionsHolder table{margin:0 0 5px 0 !important;width:100%;}
+
+.prettyMapList .mapLocationDirectionsHolder .adp-text{padding-left:35px;vertical-align:middle;}
+
+.prettyMapList .printDirections{float:right;margin-top:5px;padding:5px;}
+
+
+/*Pagination*/
+.prettyPagination
+{
+	height: 45px;
+        margin-bottom: 10px;
+	padding-top:5px;
+	text-align:center;
+}
+.prettyPagination .pagingInfo{display:inline-block;*display:inline;margin-top:10px;zoom:1;}
+
+.prettyPagination a{
+	display:inline-block;
+	padding:5px;
+	*display:inline;
+	zoom:1;
+}
+
+.prettyPagination a.pfl_next{float:right;}
+.prettyPagination a.pfl_prev{float:left;}
+.prettyPagination a.disabled{opacity:0.4;}
+
+/*SEARCH AND FILTERS*/
+/*Filters*/
+.prettyMapList .prettyFileBar{
+    border-bottom: 1px dashed #EFEFEF;
+    padding-bottom: 5px;
+    position:relative;
+}
+
+.prettyMapList .prettyFileBar .btn{margin-left:5px;}
+
+.prettyMapList .prettyFileBar .unstyled li{
+    background-image: none;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.prettyMapList .prettyFileBar .prettyFileFilters,
+.prettyMapList .prettyFileBar .prettyFileSorting{
+	/*Drop shadow*/
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
+	background-color:#fff;
+	border:solid 1px #ccc;
+	border-radius:0 0 5px 5px;
+	display:none;
+	position:absolute;
+	font-size: 11px;
+	line-height: 1.2em;
+	right:0;
+	top:38px;
+	width:120px;
+	z-index:100;
+}
+
+.prettyMapList .prettyFileBar .prettyFileSorting{right:105px;}
+
+.prettyMapList .prettyFileBar .prettyFileFilters p,
+.prettyMapList .prettyFileBar .prettyFileSorting p{
+	margin-bottom:0 !important;
+        padding-bottom:0 !important;
+}
+
+.prettyMapList .prettyFileBar .prettyFileFilters li a,
+.prettyMapList .prettyFileBar .prettyFileSorting li a{
+	border-bottom:solid 1px #f4f4f4;
+	color:#21759B;
+	display:block;
+	font-size:12px;
+	margin:0;
+	padding:5px;
+	text-decoration:none;
+
+	/*Animation*/
+	-webkit-transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-o-transition: all 0.2s ;
+	transition: all 0.2s ;
+}
+
+
+
+.prettyMapList .prettyFileBar .prettyFileFilters li a{
+    background:rgb(247,255,224) none no-repeat 91px 10px;
+}
+
+.prettyMapList .prettyFileBar .prettyFileFilters li a:hover,
+.prettyMapList .prettyFileBar .prettyFileSorting li a:hover{
+	background-color:rgb(247,255,224);
+	color:#D54E21;
+}
+
+/*Direction icons*/
+.prettyMapList .prettyFileBar .prettyFileSorting li a{background:transparent url(../images/icons/silk_icons/arrow_down_red.png) no-repeat 100px 4px;}
+.prettyMapList .prettyFileBar .prettyFileSorting li a.sortAsc{background:transparent url(../images/icons/silk_icons/arrow_up_red.png) no-repeat 100px 4px;}
+
+/*Close bar*/
+.prettyMapList .prettyFileBar .bar{
+	background-color:#fbfbfb;
+	border-radius:0 0 5px 5px;
+	border-top:solid 1px #ccc;
+	text-align:right;
+}
+
+.prettyMapList .prettyFileBar .bar .cross{
+	background:transparent url(../images/icons1/cross.png) no-repeat 99% 50%;
+	display:block;
+	height:16px;
+	padding:5px;
+	text-align:left;
+	text-indent:-9000px;
+	opacity:0.4;
+}
+
+.prettyMapList .prettyFileBar .bar .cross:hover{
+    background-color:#efefef;
+}
+
+/*Selected filter*/
+.prettyMapList .prettyFileBar .prettyFileFilters a.showing{
+	/*Gradients*/
+	background:rgb(247,255,224) none no-repeat 91px 2px; /* Old browsers */
+
+	color: #626933;
+	padding-left:24px;
+	position:relative;
+	text-shadow:0 1px 1px rgba(255,255,255,1);
+
+	/*Animation*/
+	-webkit-transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-o-transition: all 0.2s ;
+	transition: all 0.2s ;
+}
+
+.prettyMapList .prettyFileBar .prettyFileFilters a.showing:after
+{
+	content:"";
+	background:transparent url(../images/icons/silk_icons/tick.png) no-repeat 0 0;
+	display:block;
+	height:16px;
+	opacity:0.8;
+	position:absolute;
+	top:3px;
+	left:3px;
+	width:16px;
+}
+
+/*Message*/
+.prettyMapList .prettyMessage{
+	/*Gradient background*/
+	background: rgb(233,246,253); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(233,246,253,1) 0%, rgba(211,238,251,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,246,253,1)), color-stop(100%,rgba(211,238,251,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(233,246,253,1) 0%,rgba(211,238,251,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(233,246,253,1) 0%,rgba(211,238,251,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(233,246,253,1) 0%,rgba(211,238,251,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(233,246,253,1) 0%,rgba(211,238,251,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f6fd', endColorstr='#d3eefb',GradientType=0 ); /* IE6-9 */
+
+	/*Rounded corners*/
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+        margin: 10px 0;
+        padding: 10px 10px 10px 35px;
+	position:relative;
+}
+
+.prettyMapList .prettyMessage:after
+{
+	content:"";
+	background:transparent url(../images/icons/silk_icons/information.png) no-repeat 0 0;
+	display:block;
+	height:20px;
+	left:10px;
+	position:absolute;
+	top:14px;
+	width:20px;
+}
+
+.prettyMapList .prettyMessage a{margin-left:10px;}
+
+/*SEARCH*/
+.prettyMapList .prettyFileBar .prettyMapListSearch{
+	display:inline-block;
+	*display:inline;
+	padding:10px 0;
+        text-align:left;
+	zoom:1;
+}
+
+.prettyMapList .prettyFileBar .combo{padding-bottom:20px;position:relative;}
+
+body .prettyMapList .prettyFileBar .combo .prettySearchValue{width:100px;}
+
+.prettyMapList .prettyFileBar .combo .clearSearch{ 
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    bottom: -5px;
+    box-shadow: none;
+    color: #333;
+    font-size: 11px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+.prettyMapList .prettyFileBar .prettyMapListSearch label{margin-right:10px;}
+
+.prettyMapList .prettyFileBar .distanceSelector{
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom:0;    
+    padding:5px 4px;
+}
+
+/*Search box, directions box*/
+.prettyMapList .directionsPostcode,
+.prettyMapList .prettyFileBar .prettyMapListSearch input,
+.prettyMapList .prettyFileBar .prettySearchValue{
+    /*Rounded corners*/
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:solid 1px #ccc;
+    color:#ccc;
+    display:inline-block;
+    font-size:13px;
+    margin:0 5px 0 0;
+    padding:5px;
+    width: 150px;
+}
+
+/*Search box with focus*/
+.prettyMapList .directionsPostcode:focus,
+.prettyMapList .prettyFileBar .prettyMapListSearch input:focus,
+.prettyMapList .prettyFileBar .prettySearchValue:focus{
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+
+	border-color:rgba(82, 168, 236, 0.8);
+	color:#333;
+}
+
+
+
+/*Search box error*/
+.prettyMapList .prettyFileBar .prettySearchValue.error{border-color:#f00;color:#666;background-image:none;}
+
+/*Search button*/
+.prettyMapList .prettyFileBar .prettyMapListSearch a{
+	cursor:pointer;
+	display:inline-block;
+	*display:inline;/*ie6 and 7*/
+	font-size:13px;
+        margin-left:0;
+	zoom:1;/*ie6 and 7*/
+}
+
+/*Clear search function*/
+.prettyMapList .prettyFileBar .prettyMapListSearch .clearSearch{margin-left:3px;}
+
+.prettyMapList .prettyListItems{min-height:150px;}
+
+/*LOADING*/
+.prettyMapList .prettyListItems.loading{
+	background:#fff url("../images/loading32.gif") no-repeat 50% 50%;
+	height:200px;
+}
+
+.prettyMapList .prettyListItems.loading a{
+	display:none;
+}
+
+/*GEOLOCATING*/
+.prettyMapList .getDirections .getdirectionsgeo,
+.prettyMapList .getDirections .getdirectionsgeo:hover,
+.prettyMapList .getDirections .getdirectionsgeo:active{
+    	background:#fff url("../images/target.png") no-repeat 50% 50%;
+        margin-left:3px;
+        padding:5px;
+        text-indent:-9000px;
+        width:15px;
+}
+
+.prettyMapList .getDirections .getdirectionsgeo:hover{background-color:#eee}
+
+.prettyMapList .getDirections .smallLoading,
+.prettyMapList .getDirections .smallLoading:hover{
+    	background:#fff url("../images/loading16.gif") no-repeat 50% 50%;
+}
+
+
+.prettyMapList .viewLocationPage{margin-top:10px;}
+
+/*Fixes for common template issues
+Feel free to remove or tweak these if you run into issues
+=========================================*/
+
+.mapHolder img{
+    box-shadow: none !important;
+    visibility: visible !important;
+}
+
+/*CUSTOM PAGE TEMPLATE*/
+/*The map box*/
+.mapHolder{height:350px;width:100%;}
+
+#SingleMapLocation{
+    -webkit-box-shadow:  0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+            box-shadow:  0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+
+    background-color:#fff;
+    border:solid 1px #ccc;
+    margin-bottom:15px;
+    padding:5px 5px 0 5px;
+}
+/*The address box*/
+#MapAddressContainer{
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color:#f9f9f9;
+    border:solid 1px #ccc;
+    display:inline-block;
+    margin:30px 0 20px 0;
+    padding:10px;
+    width:100%;
+
+}
+#MapAddressLabel
+{
+    color:#888;
+    display:inline-block;
+    font-size:0.8em;
+    margin-bottom:5px;
+}
+
+#MapAddress{
+
+}
+
+.maplist_featuredimage{
+    -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+            box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+    border:solid 1px #ccc;
+    margin:0 10px 10px 0;
+    padding:5px;
+}
+
+#MaplistBack{margin:5px 0 10px 0;}
+
+/*Map Positioning
+============================*/
+
+/*Map to left*/
+.leftmap .mapHolder{float:left;margin-right:1%;width:49%;}
+.leftmap #ListContainer{float:left;width:49%;}
+
+/*Map to right*/
+.rightmap .mapHolder{float:right;margin-right:1%;width:49%;}
+.rightmap #ListContainer{float:left;width:49%;}
+
+/* Single map location
+============================*/
+.FullMapPage #SingleMapLocation{height:300px;width:100%;}
+.FullMapPage .infoWindow{width:500px;}
+.FullMapPage .infoWindowContainer .infoWindow h3{margin-bottom:0 !important;}
+.FullMapPage .infoWindow .infowindowContent{font-size:13px;height: 160px;overflow:auto;padding-top:10px;}
+.FullMapPage .infoWindow .infowindowContent .locationImage{float:left;padding:0 10px 10px 0;}
+.FullMapPage .address,
+.FullMapPage .openinghours,
+.FullMapPage .telephone{padding-left:170px;position:relative;}
+
+.FullMapPage .address span,
+.FullMapPage .openinghours span,
+.FullMapPage .telephone span{font-weight: bold;left:0;position:absolute;}

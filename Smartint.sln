@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{88A30576-7583-4F75-8136-5EFD2C14ADFF}") = "Smartint", "Smartint\Smartint.csproj", "{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD} = {C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartintPlugins", "SmartintPlugins\SmartintPlugins.csproj", "{C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1EA9D7-85D2-49E3-BAAE-1E5F3FD8B378}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B5BEB7-7EDD-4B4A-9E4C-E5219F34E8FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

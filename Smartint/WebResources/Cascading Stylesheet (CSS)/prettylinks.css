@@ -1,0 +1,93 @@
+a.prettylink,a.prettylink:visited
+{
+	/*Gradient background*/
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	
+	/*Drop shadow*/
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); 
+	
+	/*Rounded corners*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+
+	/*Text shadow*/
+	text-shadow: 0px 2px 0px #fff;
+	
+	border:solid 1px #ccc;	
+	color:#21759B;
+	cursor:pointer;
+	display:block;	
+	font-size:14px;
+	line-height:1.2em;
+	margin:10px 0;
+	padding:10px 10px 10px 35px;
+	*padding:10px;/*ie6/7 don't support pseudo elements so no need to make space for the icon*/
+	position:relative;
+	text-decoration:none;
+	zoom:1;
+}
+
+a.prettylink:after
+{
+	content:"";			
+	display:block;		
+	height:20px;
+	left:10px;
+	margin-right:2px;		
+	position:absolute;		
+	top:11px;
+	width:20px;
+}
+
+a:hover.prettylink
+{
+	background-color:#ccc;
+	border-color:#aaa;
+	color:#D54E21;
+}
+
+a:active.prettylink
+{
+	/*Inset drop-shadow*/
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2); 
+
+	background-color:#ededed;	
+	background-position:0 -10px;
+	background-repeat:repeat-x;
+	border-color:#aaa;
+}
+
+
+/*Set icons*/
+a.doc:after{background:transparent url(/WebResources/qg_/img/silk_icons/page_word.png) no-repeat 0 0;}
+a.mp3:after{background:transparent url(/WebResources/qg_/img/silk_icons/music.png) no-repeat 0 0;}
+/*a.mp3:after{background:transparent url(/WebResources/qg_/img/silk_icons/ipod.png) no-repeat 0 0;} - Alternative icon */ 
+a.pdf:after{background:transparent url(/WebResources/qg_/img/silk_icons/page_white_acrobat.png) no-repeat 0 0;}
+a.ppt:after{background:transparent url(/WebResources/qg_/img/silk_icons/page_white_powerpoint.png) no-repeat 0 0;}
+a.xls:after{background:transparent url(/WebResources/qg_/img/silk_icons/page_excel.png) no-repeat 0 0;}
+a.video:after{background:transparent url(/WebResources/qg_/img/silk_icons/film.png) no-repeat 0 0;}
+/*a.zip:after{background:transparent url(/WebResources/qg_/img/silk_icons/page_white_compressed.png) no-repeat 0 0;} - Alternative icon*/
+a.zip:after{background:transparent url(/WebResources/qg_/img/silk_icons/page_white_zip.png) no-repeat 0 0;}
+
+
+
+
+        a.prettylink {
+            color: #990000 !important;
+        }
+
+            a.prettylink:hover {
+                color: #a0ce4e !important;
+            }

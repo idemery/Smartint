@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5d1ea9d7-85d2-49e3-baae-1e5f3fd8b378</ProjectGuid>
+    <ProjectTypeGuids>{88A30576-7583-4F75-8136-5EFD2C14ADFF}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smartint</RootNamespace>
+    <AssemblyName>Smartint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputFile>Smartint.zip</OutputFile>
+    <Name>Smartint</Name>
+    <MainFile>WebResources\Web Page (HTML)\authorize.html</MainFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Source" />
+    <Folder Include="WebResources\Cascading Stylesheet %28CSS%29\" />
+    <Folder Include="WebResources\GIF format\" />
+    <Folder Include="WebResources\PNG format\" />
+    <Folder Include="WebResources\Script %28JScript%29\" />
+    <Folder Include="WebResources\Script %28JScript%29\lcid" />
+    <Folder Include="WebResources\Web Page %28HTML%29\" />
+    <RegisterPlugin Include="RegisterFile.crmregister">
+      <DisplayName>RegisterFile</DisplayName>
+      <UniqueName>qg_RegisterFile</UniqueName>
+      <WebResourceType>NotSupported</WebResourceType>
+    </RegisterPlugin>
+    <Folder Include="WebResources" />
+  </ItemGroup>
+  <ItemGroup>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\authorize.css">
+      <DisplayName>authorize</DisplayName>
+      <UniqueName>qg_/css/authorize.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\commands.css">
+      <DisplayName>commands</DisplayName>
+      <UniqueName>qg_/css/commands.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\common.css">
+      <DisplayName>common</DisplayName>
+      <UniqueName>qg_/css/common.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\contextmenu.css">
+      <DisplayName>contextmenu</DisplayName>
+      <UniqueName>qg_/css/contextmenu.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\cwd.css">
+      <DisplayName>cwd</DisplayName>
+      <UniqueName>qg_/css/cwd.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\dialog.css">
+      <DisplayName>dialog</DisplayName>
+      <UniqueName>qg_/css/dialog.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\fonts.css">
+      <DisplayName>fonts</DisplayName>
+      <UniqueName>qg_/css/fonts.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\Grey_light_default.css">
+      <DisplayName>Grey_light_default</DisplayName>
+      <UniqueName>qg_/css/Grey_light_default.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\jqueryui1.8.23.custom.css">
+      <DisplayName>jqueryui1.8.23.custom</DisplayName>
+      <UniqueName>qg_/css/jqueryui1.8.23.custom.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\MapListProCore.css">
+      <DisplayName>MapListProCore</DisplayName>
+      <UniqueName>qg_/css/MapListProCore.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\navbar.css">
+      <DisplayName>navbar</DisplayName>
+      <UniqueName>qg_/css/navbar.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\prettylinks.css">
+      <DisplayName>prettylinks</DisplayName>
+      <UniqueName>qg_/css/prettylinks.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\quicklook.css">
+      <DisplayName>quicklook</DisplayName>
+      <UniqueName>qg_/css/quicklook.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\statusbar.css">
+      <DisplayName>statusbar</DisplayName>
+      <UniqueName>qg_/css/statusbar.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\theme.css">
+      <DisplayName>theme</DisplayName>
+      <UniqueName>qg_/css/theme.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\toolbar.css">
+      <DisplayName>toolbar</DisplayName>
+      <UniqueName>qg_/css/toolbar.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\GIF format\crop.gif">
+      <DisplayName>crop</DisplayName>
+      <UniqueName>qg_/img/crop.gif</UniqueName>
+      <WebResourceType>GIF</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\GIF format\progress.gif">
+      <DisplayName>progress</DisplayName>
+      <UniqueName>qg_/img/progress.gif</UniqueName>
+      <WebResourceType>GIF</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\GIF format\spinnermini.gif">
+      <DisplayName>spinnermini</DisplayName>
+      <UniqueName>qg_/img/spinnermini.gif</UniqueName>
+      <WebResourceType>GIF</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\arrowsactive.png">
+      <DisplayName>arrowsactive</DisplayName>
+      <UniqueName>qg_/img/arrowsactive.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\arrowsnormal.png">
+      <DisplayName>arrowsnormal</DisplayName>
+      <UniqueName>qg_/img/arrowsnormal.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\dialogs.png">
+      <DisplayName>dialogs</DisplayName>
+      <UniqueName>qg_/img/dialogs.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\Dropbox16X16.png">
+      <DisplayName>Dropbox16X16</DisplayName>
+      <UniqueName>qg_/img/Dropbox16X16.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\Dropbox32X32.png">
+      <DisplayName>Dropbox32X32</DisplayName>
+      <UniqueName>qg_/img/Dropbox32X32.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\email.png">
+      <DisplayName>email</DisplayName>
+      <UniqueName>qg_/img/email.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\GoogleDrive16x16.png">
+      <DisplayName>GoogleDrive16x16</DisplayName>
+      <UniqueName>qg_/img/GoogleDrive16x16.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\iconsbig.png">
+      <DisplayName>iconsbig</DisplayName>
+      <UniqueName>qg_/img/iconsbig.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\iconssmall.png">
+      <DisplayName>iconssmall</DisplayName>
+      <UniqueName>qg_/img/iconssmall.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\logo.png">
+      <DisplayName>logo</DisplayName>
+      <UniqueName>qg_/img/logo.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_excel.png">
+      <DisplayName>page_excel</DisplayName>
+      <UniqueName>qg_/img/page_excel.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_acrobat.png">
+      <DisplayName>page_white_acrobat</DisplayName>
+      <UniqueName>qg_/img/page_white_acrobat.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_actionscript.png">
+      <DisplayName>page_white_actionscript</DisplayName>
+      <UniqueName>qg_/img/page_white_actionscript.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_camera.png">
+      <DisplayName>page_white_camera</DisplayName>
+      <UniqueName>qg_/img/page_white_camera.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_compressed.png">
+      <DisplayName>page_white_compressed</DisplayName>
+      <UniqueName>qg_/img/page_white_compressed.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_excel.png">
+      <DisplayName>page_white_excel</DisplayName>
+      <UniqueName>qg_/img/page_white_excel.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_office.png">
+      <DisplayName>page_white_office</DisplayName>
+      <UniqueName>qg_/img/page_white_office.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_picture.png">
+      <DisplayName>page_white_picture</DisplayName>
+      <UniqueName>qg_/img/page_white_picture.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_powerpoint.png">
+      <DisplayName>page_white_powerpoint</DisplayName>
+      <UniqueName>qg_/img/page_white_powerpoint.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_vector.png">
+      <DisplayName>page_white_vector</DisplayName>
+      <UniqueName>qg_/img/page_white_vector.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_visualstudio.png">
+      <DisplayName>page_white_visualstudio</DisplayName>
+      <UniqueName>qg_/img/page_white_visualstudio.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_word.png">
+      <DisplayName>page_white_word</DisplayName>
+      <UniqueName>qg_/img/page_white_word.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_white_zip.png">
+      <DisplayName>page_white_zip</DisplayName>
+      <UniqueName>qg_/img/page_white_zip.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\page_word.png">
+      <DisplayName>page_word</DisplayName>
+      <UniqueName>qg_/img/page_word.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\picture.png">
+      <DisplayName>picture</DisplayName>
+      <UniqueName>qg_/img/picture.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\qglogo.png">
+      <DisplayName>qglogo</DisplayName>
+      <UniqueName>qg_/img/qglogo.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\quicklookbg.png">
+      <DisplayName>quicklookbg</DisplayName>
+      <UniqueName>qg_/img/quicklookbg.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\quicklookicons.png">
+      <DisplayName>quicklookicons</DisplayName>
+      <UniqueName>qg_/img/quicklookicons.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\resize.png">
+      <DisplayName>resize</DisplayName>
+      <UniqueName>qg_/img/resize.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\sendemail.png">
+      <DisplayName>sendemail</DisplayName>
+      <UniqueName>qg_/img/sendemail.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\Skydrive16x16.png">
+      <DisplayName>Skydrive16x16</DisplayName>
+      <UniqueName>qg_/img/Skydrive16x16.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\Smartint16X16.png">
+      <DisplayName>Smartint16X16</DisplayName>
+      <UniqueName>qg_/img/Smartint16X16.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\Smartint32X32.png">
+      <DisplayName>Smartint32X32</DisplayName>
+      <UniqueName>qg_/img/Smartint32X32.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\toolbar.png">
+      <DisplayName>toolbar</DisplayName>
+      <UniqueName>qg_/img/toolbar.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_flat_0_aaaaaa_40x100.png">
+      <DisplayName>uibg_flat_0_aaaaaa_40x100</DisplayName>
+      <UniqueName>qg_/img/uibg_flat_0_aaaaaa_40x100.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_flat_75_ffffff_40x100.png">
+      <DisplayName>uibg_flat_75_ffffff_40x100</DisplayName>
+      <UniqueName>qg_/img/uibg_flat_75_ffffff_40x100.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_glass_55_fbf9ee_1x400.png">
+      <DisplayName>uibg_glass_55_fbf9ee_1x400</DisplayName>
+      <UniqueName>qg_/img/uibg_glass_55_fbf9ee_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_glass_65_ffffff_1x400.png">
+      <DisplayName>uibg_glass_65_ffffff_1x400</DisplayName>
+      <UniqueName>qg_/img/uibg_glass_65_ffffff_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_glass_75_dadada_1x400.png">
+      <DisplayName>uibg_glass_75_dadada_1x400</DisplayName>
+      <UniqueName>qg_/img/uibg_glass_75_dadada_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_glass_75_e6e6e6_1x400.png">
+      <DisplayName>uibg_glass_75_e6e6e6_1x400</DisplayName>
+      <UniqueName>qg_/img/uibg_glass_75_e6e6e6_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_glass_95_fef1ec_1x400.png">
+      <DisplayName>uibg_glass_95_fef1ec_1x400</DisplayName>
+      <UniqueName>qg_/img/uibg_glass_95_fef1ec_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uibg_highlightsoft_75_cccccc_1x100.png">
+      <DisplayName>uibg_highlightsoft_75_cccccc_1x100</DisplayName>
+      <UniqueName>qg_/img/uibg_highlightsoft_75_cccccc_1x100.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uiicons_222222_256x240.png">
+      <DisplayName>uiicons_222222_256x240</DisplayName>
+      <UniqueName>qg_/img/uiicons_222222_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uiicons_2e83ff_256x240.png">
+      <DisplayName>uiicons_2e83ff_256x240</DisplayName>
+      <UniqueName>qg_/img/uiicons_2e83ff_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uiicons_454545_256x240.png">
+      <DisplayName>uiicons_454545_256x240</DisplayName>
+      <UniqueName>qg_/img/uiicons_454545_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uiicons_888888_256x240.png">
+      <DisplayName>uiicons_888888_256x240</DisplayName>
+      <UniqueName>qg_/img/uiicons_888888_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\PNG format\uiicons_cd0a0a_256x240.png">
+      <DisplayName>uiicons_cd0a0a_256x240</DisplayName>
+      <UniqueName>qg_/img/uiicons_cd0a0a_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\authorize.js">
+      <DisplayName>authorize</DisplayName>
+      <UniqueName>qg_/js/authorize.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.command.js">
+      <DisplayName>elFinder.command</DisplayName>
+      <UniqueName>qg_/js/elFinder.command.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.Commands.min.js">
+      <DisplayName>elFinder.Commands.min</DisplayName>
+      <UniqueName>qg_/js/elFinder.Commands.min.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elfinder.en.js">
+      <DisplayName>elfinder.en</DisplayName>
+      <UniqueName>qg_/js/elfinder.en.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.history.js">
+      <DisplayName>elFinder.history</DisplayName>
+      <UniqueName>qg_/js/elFinder.history.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.js">
+      <DisplayName>elFinder</DisplayName>
+      <UniqueName>qg_/js/elFinder.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.options.js">
+      <DisplayName>elFinder.options</DisplayName>
+      <UniqueName>qg_/js/elFinder.options.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.resources.js">
+      <DisplayName>elFinder.resources</DisplayName>
+      <UniqueName>qg_/js/elFinder.resources.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.ui.min.js">
+      <DisplayName>elFinder.ui.min</DisplayName>
+      <UniqueName>qg_/js/elFinder.ui.min.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\elFinder.version.js">
+      <DisplayName>elFinder.version</DisplayName>
+      <UniqueName>qg_/js/elFinder.version.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\jquery.dialogelfinder.js">
+      <DisplayName>jquery.dialogelfinder</DisplayName>
+      <UniqueName>qg_/js/jquery.dialogelfinder.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\jquery.elfinder.js">
+      <DisplayName>jquery.elfinder</DisplayName>
+      <UniqueName>qg_/js/jquery.elfinder.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\jquery1.8.1.min.js">
+      <DisplayName>jquery1.8.1.min</DisplayName>
+      <UniqueName>qg_/js/jquery1.8.1.min.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\jqueryui1.8.23.custom.min.js">
+      <DisplayName>jqueryui1.8.23.custom.min</DisplayName>
+      <UniqueName>qg_/js/jqueryui1.8.23.custom.min.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.ar.js">
+      <DisplayName>elfinder.ar</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.ar.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.bg.js">
+      <DisplayName>elfinder.bg</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.bg.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.ca.js">
+      <DisplayName>elfinder.ca</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.ca.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.cs.js">
+      <DisplayName>elfinder.cs</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.cs.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.de.js">
+      <DisplayName>elfinder.de</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.de.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.es.js">
+      <DisplayName>elfinder.es</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.es.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.fa.js">
+      <DisplayName>elfinder.fa</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.fa.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.fr.js">
+      <DisplayName>elfinder.fr</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.fr.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.hu.js">
+      <DisplayName>elfinder.hu</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.hu.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.it.js">
+      <DisplayName>elfinder.it</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.it.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.jp.js">
+      <DisplayName>elfinder.jp</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.jp.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.ko.js">
+      <DisplayName>elfinder.ko</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.ko.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.nl.js">
+      <DisplayName>elfinder.nl</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.nl.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.no.js">
+      <DisplayName>elfinder.no</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.no.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.pl.js">
+      <DisplayName>elfinder.pl</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.pl.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.pt_BR.js">
+      <DisplayName>elfinder.pt_BR</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.pt_BR.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.ru.js">
+      <DisplayName>elfinder.ru</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.ru.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.tr.js">
+      <DisplayName>elfinder.tr</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.tr.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\lcid\elfinder.zh_CN.js">
+      <DisplayName>elfinder.zh_CN</DisplayName>
+      <UniqueName>qg_/js/lcid/elfinder.zh_CN.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\Nibbler.min.js">
+      <DisplayName>Nibbler.min</DisplayName>
+      <UniqueName>qg_/js/Nibbler.min.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\oauth.js">
+      <DisplayName>oauth</DisplayName>
+      <UniqueName>qg_/js/oauth.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\sdk.metadata.js">
+      <DisplayName>sdk.metadata</DisplayName>
+      <UniqueName>qg_/js/sdk.metadata.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\sha1.js">
+      <DisplayName>sha1</DisplayName>
+      <UniqueName>qg_/js/sha1.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\smartint.js">
+      <DisplayName>smartint</DisplayName>
+      <UniqueName>qg_/js/smartint.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\wrapper.js">
+      <DisplayName>wrapper</DisplayName>
+      <UniqueName>qg_/js/wrapper.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Web Page %28HTML%29\authorize.html">
+      <DisplayName>authorize</DisplayName>
+      <UniqueName>qg_authorize.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Web Page %28HTML%29\smartint.html">
+      <DisplayName>smartint</DisplayName>
+      <UniqueName>qg_smartint.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </CRMWebResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartintPlugins\SmartintPlugins.csproj">
+      <Name>SmartintPlugins</Name>
+      <Project>{c1b5beb7-7edd-4b4a-9e4c-e5219f34e8fd}</Project>
+      <Private>True</Private>
+      <SilverlightApplication>False</SilverlightApplication>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Source\authorize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Source\smartint.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Source\wrapper.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+			 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

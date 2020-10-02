@@ -1,0 +1,10 @@
+C:\Users\crm\Documents\Smartint\Smartint\Smartint\bin\Debug\Smartint.SmartintPlugins.dll
+C:\Users\crm\Documents\Smartint\Smartint\Smartint\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\crm\Documents\Smartint\Smartint\Smartint\bin\Debug\Smartint.SmartintPlugins.pdb
+C:\Users\crm\Documents\Smartint\Smartint\Smartint\obj\Debug\Smartint.csprojResolveAssemblyReference.cache
+C:\Users\crm\Documents\Smartint\Smartint\Smartint\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\Smartint\bin\Debug\Smartint.SmartintPlugins.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\Smartint\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\Smartint\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\Smartint\bin\Debug\Smartint.SmartintPlugins.pdb
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\Smartint\obj\Debug\Smartint.csprojResolveAssemblyReference.cache

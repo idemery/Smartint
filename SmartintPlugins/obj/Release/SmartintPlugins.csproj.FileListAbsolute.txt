@@ -1,0 +1,17 @@
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\bin\Release\Smartint.SmartintPlugins.dll
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\bin\Release\Smartint.SmartintPlugins.pdb
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\bin\Release\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\bin\Release\Microsoft.Xrm.Sdk.dll
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\obj\Release\SmartintPlugins.csprojResolveAssemblyReference.cache
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\obj\Release\Smartint.SmartintPlugins.dll
+C:\Users\crm\Documents\Smartint\Smartint\SmartintPlugins\obj\Release\Smartint.SmartintPlugins.pdb
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\bin\Release\Smartint.SmartintPlugins.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\bin\Release\Smartint.SmartintPlugins.pdb
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\bin\Release\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\bin\Release\Microsoft.Xrm.Sdk.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\obj\Release\SmartintPlugins.csprojResolveAssemblyReference.cache
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\obj\Release\Smartint.SmartintPlugins.dll
+C:\Users\crm\Desktop\Smartint\Smartint\Smartint\SmartintPlugins\obj\Release\Smartint.SmartintPlugins.pdb
+C:\Users\islam.IDEMERY\Downloads\Source\Source\Smartint\Smartint\SmartintPlugins\obj\Release\SmartintPlugins.csprojResolveAssemblyReference.cache
+C:\Users\islam.IDEMERY\Downloads\Source\Source\Smartint\Smartint\SmartintPlugins\obj\Release\Smartint.SmartintPlugins.dll
+C:\Users\islam.IDEMERY\Downloads\Source\Source\Smartint\Smartint\SmartintPlugins\obj\Release\Smartint.SmartintPlugins.pdb
